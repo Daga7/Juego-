@@ -3,7 +3,7 @@ import time
 def mensaje_centrado(texto):
     # Obtén el ancho de la terminal actual
     terminal_ancho = 160
-    # Calcula el espacio en blanco a agregar antes del mensaje para centrarlo
+    # Calcula en blanco
     espacio_en_blanco = (terminal_ancho - len(texto)) // 2
 
     # Imprime el espacio en blanco antes del mensaje
@@ -11,9 +11,7 @@ def mensaje_centrado(texto):
 
     # Muestra cada letra con un intervalo de tiempo
     for letra in texto:
-        print(letra, end='', flush=True)  # La opción 'flush' asegura que la letra se muestre inmediatamente
-        time.sleep(0.2)  # Intervalo de tiempo en segundos (ajusta según lo que desees)
-
+        print(letra, end='', flush=True)  
     # Salto de línea al final
     print()
 
